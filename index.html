@@ -54,7 +54,7 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1 fs-5">Hello, I'm</p>
+        <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Sean Wong</h1>
         <p class="section__text__p2 mb-3">Full-stack Developer</p>
         <div class="btn-container">
@@ -93,13 +93,15 @@
         </div>
       </div>
     </section>
-    <p class="section__text__p1 fs-5">Get To Know More</p>
+    <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <section id="about" class="d-flex justify-content-center">
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="section__pic-container mb-0">
           <img
             src="./src/img/sean.png"
+            width="350"
+            height="350"
             alt="Profile picture"
             class="about-pic"
           />
@@ -116,7 +118,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>HTML</h3>
+                    <h4>HTML</h4>
                   </div>
                 </article>
                 <article>
@@ -126,7 +128,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>CSS</h3>
+                    <h4>CSS</h4>
                   </div>
                 </article>
                 <article>
@@ -136,7 +138,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>SASS</h3>
+                    <h4>SASS</h4>
                   </div>
                 </article>
                 <article>
@@ -146,7 +148,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>JavaScript</h3>
+                    <h4>JavaScript</h4>
                   </div>
                 </article>
                 <article>
@@ -156,7 +158,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>PostgreSQL</h3>
+                    <h4>PostgreSQL</h4>
                   </div>
                 </article>
                 <article>
@@ -166,7 +168,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>Ruby on Rails</h3>
+                    <h4>Ruby on Rails</h4>
                   </div>
                 </article>
                 <article>
@@ -176,7 +178,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>ActiveRecord</h3>
+                    <h4>ActiveRecord</h4>
                   </div>
                 </article>
                 <article>
@@ -186,14 +188,14 @@
                     class="icon"
                   />
                   <div>
-                    <h3>Git</h3>
+                    <h4>Git</h4>
                   </div>
                 </article>
               </div>
             </div>
           </div>
           <div class="text-container">
-            <p class="fs-5">
+            <p class="">
               Leaving a comfortable paying job and starting from scratch was one
               of the hardest decisions I had to make, but it gave me an
               opportunity to discover what I truly wanted to do as a career. I
@@ -212,22 +214,48 @@
     </section>
 
     <section id="projects">
-      <p class="section__text__p1 fs-5">Browse My Recent</p>
+      <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
-            <div class="article-container"></div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="article-container">
+              <img src="./src/img/indexpage.png" alt="infogenie" height="500" />
+            </div>
+            <h3 class="experience-sub-title project-title">
+              InfoGenie: AI-Powered Mobile App
+            </h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/douglashjf/rails-infogenie'"
               >
                 Github
               </button>
               <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='https://www.infogenie.me'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./src/img/memory.png" alt="memory" height="500" />
+            </div>
+            <h3 class="experience-sub-title project-title">
+              Multiple JavaScript Projects: To-do-lists, Memory Game etc.
+            </h3>
+            <div class="btn-container">
+              <button
                 class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/seanwongdev/Memory-game'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-1 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
@@ -235,35 +263,22 @@
             </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container"></div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="article-container">
+              <img src="./src/img/housemarket1.png" alt="memory" height="210" />
+              <img src="./src/img/housemarket2.png" alt="memory" height="250" />
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container"></div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h3 class="experience-sub-title project-title">
+              99.co Clone: Property e-Bidding Website
+            </h3>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/douglashjf/house-marketplace'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-1 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
@@ -280,7 +295,7 @@
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1 fs-5">Get in Touch</p>
+      <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
