@@ -7,9 +7,9 @@ function toggleMenu() {
 
 const typed = new Typed("#element", {
   strings: [
-    "Learning is a life long process",
-    "Learning coding is a long process",
-    "...Coding is <strong>Life</strong>",
+    "Coding is a Life-Long <strong>Learning Process</strong>",
+    "Coding is <strong>Infinite</strong>",
+    "Coding is <strong>Life</strong>",
   ],
   startDelay: 1000,
   backDelay: 1500,
