@@ -58,11 +58,11 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181) !important;
 }
 
-.logo {
+.intro {
   font-size: 2rem;
 }
 
-.logo:hover {
+.intro:hover {
   cursor: default;
 }
 
@@ -166,9 +166,9 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 5rem;
-  height: 80vh;
+  height: 65vh;
 }
 
 .section__pic-container {
@@ -180,7 +180,7 @@ section {
 }
 
 .section__text {
-  align-self: center;
+  margin-top: 45px;
   text-align: center;
 }
 
@@ -273,7 +273,7 @@ section {
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .about-details-container {
@@ -344,6 +344,7 @@ article .icon {
 
 #projects {
   position: relative;
+  padding: 0;
 }
 
 .color-container {
