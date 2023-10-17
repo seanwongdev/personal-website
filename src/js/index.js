@@ -7,12 +7,12 @@ function toggleMenu() {
 
 const typed = new Typed("#element", {
   strings: [
-    "Coding is a Life-Long <strong>Learning Process</strong>",
-    "Coding is <strong>Infinite</strong>",
-    "Coding is <strong>Life</strong>",
+    "  is the bridge between us and the machines",
+    "  is like solving puzzles, but you can't see the picture",
+    "  is a journey, not a destination",
   ],
-  startDelay: 1000,
-  backDelay: 1500,
-  typeSpeed: 20,
-  loop: true,
+  startDelay: 1500,
+  backDelay: 3000,
+  typeSpeed: 30,
+  loop: false,
 });
