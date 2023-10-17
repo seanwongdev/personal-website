@@ -16,3 +16,18 @@ const typed = new Typed("#element", {
   typeSpeed: 30,
   loop: false,
 });
+
+const infogenieBtn = document.querySelector(".close-infogenie");
+
+infogenieBtn.addEventListener("click", function (e) {
+  const modal = document.getElementById("infogenieModal");
+  console.log(modal);
+  modal.classList.add("d-none");
+});
+
+const openInfogenie = document.querySelector(".open-infogenie");
+openInfogenie.addEventListener("click", function (e) {
+  const modal = document.getElementById("infogenieModal");
+  console.log(modal);
+  modal.classList.remove("d-none");
+});

@@ -214,7 +214,7 @@
               >
                 Github
               </button>
-              <button class="btn-color-3" >+</button>
+              <button class="btn-color-3 open-infogenie" >+</button>
               <button
                 class="btn btn-color-1 project-btn"
                 onclick="location.href='https://www.infogenie.me'"
@@ -223,7 +223,7 @@
               </button>
               
             </div>
-            <div class="infogenie-modal" id="infogenieModal" >
+            <div class="infogenie-modal d-none" id="infogenieModal" >
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-body">
@@ -238,7 +238,7 @@
                     <li>Leveraged Web Sockets to bypass Heroku app-loading 30 seconds limit</li>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary close-infogenie" >Close</button>
                   </div>
                 </div>
               </div>
@@ -247,7 +247,7 @@
             
           
 
-          <div class="details-container color-container d-flex flex-column style="height: 400px;"">
+          <div class="memory details-container color-container d-flex flex-column style="height: 400px;"">
             <div class="article-container p-2">
               <img src="./src/img/memory.png" alt="memory" height="500" />
             </div>
@@ -261,7 +261,7 @@
               >
                 Github
               </button>
-              <button class="btn-color-3">+</button>
+              <button class="btn-color-3 open-memory">+</button>
               <button
                 class="btn btn-color-1 project-btn"
                 onclick="location.href='https://github.com/'"
@@ -269,7 +269,32 @@
                 Live Demo
               </button>
             </div>
+            <div class="memory-modal " id="memoryModal" >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p class="pt-2"><strong>Description</strong> </p>
+                    <p >Portfolio of multiple projects with the sole purpose of honing JavaScript concepts</p>
+                    <hr>
+                    <p><strong>Concepts</strong></p>
+                    <li>Implemented features like user authentication and user preferences selection</li>
+                    <li>Socialisation of App via tools like bookmarking, comments, sharing to twitter & Whatsapp</li>
+                    <li>Use of background jobs (Sidekiq) & Action Mailer to automate sending of email per defined interval</li>
+                    <li>External interfaces with AI-powered tools, and News API with real-time refresh functionality</li>
+                    <li>Leveraged Web Sockets to bypass Heroku app-loading 30 seconds limit</li>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-memory" >Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
+
+
+
+
           <div class="details-container color-container d-flex flex-column style="height: 400px;"">
             <div class="article-container p-2">
               <img src="./src/img/housemarket1.png" alt="memory" height="210" />
