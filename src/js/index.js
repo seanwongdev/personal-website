@@ -31,3 +31,18 @@ openInfogenie.addEventListener("click", function (e) {
   console.log(modal);
   modal.classList.remove("d-none");
 });
+
+const memoryBtn = document.querySelector(".close-memory");
+
+memoryBtn.addEventListener("click", function (e) {
+  const modal = document.getElementById("memoryModal");
+  console.log(modal);
+  modal.classList.add("d-none");
+});
+
+const openMemory = document.querySelector(".open-memory");
+openMemory.addEventListener("click", function (e) {
+  const modal = document.getElementById("memoryModal");
+  console.log(modal);
+  modal.classList.remove("d-none");
+});
