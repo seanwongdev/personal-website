@@ -408,14 +408,36 @@ article .icon {
   color: white;
 }
 
+.property {
+  position: relative !important;
+}
+
+.property-modal {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  padding: 0px 20px;
+  height: auto;
+  color: white;
+  background-color: rgb(87, 87, 87);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 30px;
+}
+
+.property-modal p {
+  color: white;
+}
+
 .btn-secondary {
   background-color: white !important;
   color: black !important;
+  border: none !important;
 }
 
 .btn-secondary:hover {
   background-color: rgb(87, 87, 87) !important;
-  border: white !important;
+  border: none !important;
   color: white !important;
 }
 

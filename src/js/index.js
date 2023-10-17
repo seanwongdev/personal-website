@@ -46,3 +46,18 @@ openMemory.addEventListener("click", function (e) {
   console.log(modal);
   modal.classList.remove("d-none");
 });
+
+const propertyBtn = document.querySelector(".close-property");
+
+propertyBtn.addEventListener("click", function (e) {
+  const modal = document.getElementById("propertyModal");
+  console.log(modal);
+  modal.classList.add("d-none");
+});
+
+const openProperty = document.querySelector(".open-property");
+openProperty.addEventListener("click", function (e) {
+  const modal = document.getElementById("propertyModal");
+  console.log(modal);
+  modal.classList.remove("d-none");
+});
