@@ -84,8 +84,7 @@ const swiper = new Swiper(".mySwiper", {
   // Optional parameters
   slidesPerView: 2,
 
-  spaceBetween: 40,
-
+  spaceBetween: 80,
   loop: true,
 
   // If we need pagination
