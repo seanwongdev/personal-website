@@ -63,6 +63,21 @@ openProperty.addEventListener("click", function (e) {
   modal.classList.remove("d-none");
 });
 
+const calculatorBtn = document.querySelector(".close-calculator");
+
+calculatorBtn.addEventListener("click", function (e) {
+  const modal = document.getElementById("calculatorModal");
+  console.log(modal);
+  modal.classList.add("d-none");
+});
+
+const openCalculator = document.querySelector(".open-calculator");
+openCalculator.addEventListener("click", function (e) {
+  const modal = document.getElementById("calculatorModal");
+  console.log(modal);
+  modal.classList.remove("d-none");
+});
+
 /*   Swiper JS      */
 
 const swiper = new Swiper(".mySwiper", {

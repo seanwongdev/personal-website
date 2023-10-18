@@ -429,6 +429,27 @@ article .icon {
   color: white;
 }
 
+.calculator {
+  position: relative !important;
+}
+
+.calculator-modal {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  padding: 0px 20px;
+  height: auto;
+  color: white;
+  background-color: rgb(87, 87, 87);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 30px;
+}
+
+.calculator-modal p {
+  color: white;
+}
+
 .btn-secondary {
   background-color: white !important;
   color: black !important;
