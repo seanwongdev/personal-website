@@ -17,6 +17,7 @@ const typed = new Typed("#element", {
   loop: false,
 });
 
+/*     All of the DOM for open and closing modals    */
 const infogenieBtn = document.querySelector(".close-infogenie");
 
 infogenieBtn.addEventListener("click", function (e) {
@@ -60,4 +61,28 @@ openProperty.addEventListener("click", function (e) {
   const modal = document.getElementById("propertyModal");
   console.log(modal);
   modal.classList.remove("d-none");
+});
+
+/*   Swiper JS      */
+
+const swiper = new Swiper(".mySwiper", {
+  // Optional parameters
+  slidesPerView: 2,
+
+  spaceBetween: 40,
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "bullets",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

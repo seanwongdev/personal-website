@@ -11,6 +11,10 @@
       href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -46,7 +50,10 @@
       </div>
     </nav>
 
-    <div class="intro text-center"  style="height: 100px"><span style="color:rgb(53, 52, 52)"><strong>Coding </strong></span><span id="element"></span></div>
+    <div class="intro text-center" style="height: 100px">
+      <span style="color: rgb(53, 52, 52)"><strong>Coding </strong></span
+      ><span id="element"></span>
+    </div>
     <section id="profile">
       <div class="section__pic-container">
         <img
@@ -124,7 +131,7 @@
                     class="icon"
                   />
                   <div>
-                    <h4>React.js </h4>
+                    <h4>React.js</h4>
                   </div>
                 </article>
                 <article>
@@ -196,152 +203,323 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-
-          <div class="infogenie details-container color-container d-flex flex-column style="height: 400px;">
-            <div class="article-container p-2">
-              <img src="./src/img/indexpage.png" alt="infogenie" height="500" />
-            </div>
-            <h5 class="experience-sub-title project-title p-2">
-              InfoGenie: AI-Powered Mobile App<br> (Ruby on Rails)
-            </h5>
-            <div class="btn-container mt-auto p-2">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/douglashjf/rails-infogenie'"
-              >
-                Github
-              </button>
-              <button class="btn-color-3 open-infogenie" >+</button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://www.infogenie.me'"
-              >
-                Live Demo
-              </button>
-              
-            </div>
-            <div class="infogenie-modal d-none" id="infogenieModal" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <p class="pt-2"><strong>Description</strong> </p>
-                    <p >App that extracts and summarizes key information from the web into digestible points, enabling users to stay informed</p>
-                    <hr>
-                    <p><strong>Features</strong></p>
-                    <li>Implemented features like user authentication and user preferences selection</li>
-                    <li>Socialisation of App via tools like bookmarking, comments, sharing to twitter & Whatsapp</li>
-                    <li>Use of background jobs (Sidekiq) & Action Mailer to automate sending of email per defined interval</li>
-                    <li>External interfaces with AI-powered tools, and News API with real-time refresh functionality</li>
-                    <li>Leveraged Web Sockets to bypass Heroku app-loading 30 seconds limit</li>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary close-infogenie" >Close</button>
+      <div class="experience-details-container swiper-container mySwiper">
+        <div class="about-containers swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="infogenie details-container color-container d-flex flex-column"
+              style="height: 100%"
+            >
+              <div class="article-container p-2">
+                <img
+                  src="./src/img/indexpage.png"
+                  alt="infogenie"
+                  height="500"
+                />
+              </div>
+              <h5 class="experience-sub-title project-title p-2">
+                InfoGenie: AI-Powered Mobile App<br />
+                (Ruby on Rails)
+              </h5>
+              <div class="btn-container mt-auto p-2">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/douglashjf/rails-infogenie'"
+                >
+                  Github
+                </button>
+                <button class="btn-color-3 open-infogenie">+</button>
+                <button
+                  class="btn btn-color-1 project-btn"
+                  onclick="location.href='https://www.infogenie.me'"
+                >
+                  Live Demo
+                </button>
+              </div>
+              <div class="infogenie-modal d-none" id="infogenieModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p class="pt-2"><strong>Description</strong></p>
+                      <p>
+                        App that extracts and summarizes key information from
+                        the web into digestible points, enabling users to stay
+                        informed
+                      </p>
+                      <hr />
+                      <p><strong>Features</strong></p>
+                      <li>
+                        Implemented features like user authentication and user
+                        preferences selection
+                      </li>
+                      <li>
+                        Socialisation of App via tools like bookmarking,
+                        comments, sharing to twitter & Whatsapp
+                      </li>
+                      <li>
+                        Use of background jobs (Sidekiq) & Action Mailer to
+                        automate sending of email per defined interval
+                      </li>
+                      <li>
+                        External interfaces with AI-powered tools, and News API
+                        with real-time refresh functionality
+                      </li>
+                      <li>
+                        Leveraged Web Sockets to bypass Heroku app-loading 30
+                        seconds limit
+                      </li>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary close-infogenie"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-            
-          
-
-          <div class="memory details-container color-container d-flex flex-column style="height: 400px;"">
-            <div class="article-container p-2">
-              <img src="./src/img/memory.png" alt="memory" height="500" />
-            </div>
-            <h5 class="experience-sub-title project-title p-2">
-              Multiple Projects: Memory Game etc. <br>(JavaScript)
-            </h5>
-            <div class="btn-container mt-auto p-2">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/seanwongdev/Memory-game'"
-              >
-                Github
-              </button>
-              <button class="btn-color-3 open-memory">+</button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-            <div class="memory-modal d-none " id="memoryModal" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <p class="pt-2"><strong>Description</strong> </p>
-                    <p >Portfolio of multiple projects with the sole purpose of honing JavaScript concepts</p>
-                    <hr>
-                    <p><strong>Concepts</strong></p>
-                    <li>Reinforcing basic concepts like the use of spread operators, .sort and Math.random to shuffle cards</li>
-                    <li>Keeping to MVC model which utilises publisher-subscriber pattern between controller and views</li>
-                    <li>Use of advanced DOM, going into event propagation and delegation</li>
-                    <li>Practices the use of parent class and extensions to child classes, as well as error rendering & alert messages</li>
-                    <li>Saving data on localStorage between refreshes and having ability to clear localStorage</li>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary close-memory" >Close</button>
+          <div class="swiper-slide">
+            <div
+              class="memory details-container color-container d-flex flex-column"
+              style="height: 100%"
+            >
+              <div class="article-container p-2">
+                <img src="./src/img/memory.png" alt="memory" height="500" />
+              </div>
+              <h5 class="experience-sub-title project-title p-2">
+                Multiple Projects: Memory Game etc. <br />(JavaScript)
+              </h5>
+              <div class="btn-container mt-auto p-2">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/seanwongdev/Memory-game'"
+                >
+                  Github
+                </button>
+                <button class="btn-color-3 open-memory">+</button>
+                <button
+                  class="btn btn-color-1 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+              <div class="memory-modal d-none" id="memoryModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p class="pt-2"><strong>Description</strong></p>
+                      <p>
+                        Portfolio of multiple projects with the sole purpose of
+                        honing JavaScript concepts
+                      </p>
+                      <hr />
+                      <p><strong>Concepts</strong></p>
+                      <li>
+                        Reinforcing basic concepts like the use of spread
+                        operators, .sort and Math.random to shuffle cards
+                      </li>
+                      <li>
+                        Keeping to MVC model which utilises publisher-subscriber
+                        pattern between controller and views
+                      </li>
+                      <li>
+                        Use of advanced DOM, going into event propagation and
+                        delegation
+                      </li>
+                      <li>
+                        Practices the use of parent class and extensions to
+                        child classes, as well as error rendering & alert
+                        messages
+                      </li>
+                      <li>
+                        Saving data on localStorage between refreshes and having
+                        ability to clear localStorage
+                      </li>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary close-memory"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
-
-
-
-
-          <div class="property details-container color-container d-flex flex-column style="height: 400px;"">
-            <div class="article-container p-2">
-              <img src="./src/img/housemarket1.png" alt="memory" height="210" />
-              <img src="./src/img/housemarket2.png" alt="memory" height="250" />
-            </div>
-            <h5 class="experience-sub-title project-title p-2">
-              Property e-Bidding Website <br>(Ruby on Rails)
-            </h5>
-            <div class="btn-container mt-auto p-2">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/douglashjf/house-marketplace'"
-              >
-                Github
-              </button>
-              <button class="btn-color-3 open-property">+</button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-            <div class="property-modal d-none" id="propertyModal" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <p class="pt-2"><strong>Description</strong> </p>
-                    <p >99.co clone project that infuses bidding mechanics that enables buyers to place bids and sellers to accept offers </p>
-                    <hr>
-                    <p><strong>Features</strong></p>
-                    <li>Use of AJAX to ensure that offers can be accepted seamlessly</li>
-                    <li>PG search utilised to allow dynamic searching of apartment names and sellers </li>
-                    <li>Incorporated an advanced search filter that allows users to narrow listings</li>
-                    <li>Users can favourite their apartments to add them into a curated list for easy access</li>
-                    <li>Added Map and geolocation functionalities </li>
+          <div class="swiper-slide">
+            <div
+              class="property details-container color-container d-flex flex-column"
+              style="height: 100%"
+            >
+              <div class="article-container p-2">
+                <img
+                  src="./src/img/housemarket1.png"
+                  alt="memory"
+                  height="210"
+                />
+                <img
+                  src="./src/img/housemarket2.png"
+                  alt="memory"
+                  height="250"
+                />
+              </div>
+              <h5 class="experience-sub-title project-title p-2">
+                Property e-Bidding Website <br />(Ruby on Rails)
+              </h5>
+              <div class="btn-container mt-auto p-2">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/douglashjf/house-marketplace'"
+                >
+                  Github
+                </button>
+                <button class="btn-color-3 open-property">+</button>
+                <button
+                  class="btn btn-color-1 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+              <div class="property-modal d-none" id="propertyModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p class="pt-2"><strong>Description</strong></p>
+                      <p>
+                        99.co clone project that infuses bidding mechanics that
+                        enables buyers to place bids and sellers to accept
+                        offers
+                      </p>
+                      <hr />
+                      <p><strong>Features</strong></p>
+                      <li>
+                        Use of AJAX to ensure that offers can be accepted
+                        seamlessly
+                      </li>
+                      <li>
+                        PG search utilised to allow dynamic searching of
+                        apartment names and sellers
+                      </li>
+                      <li>
+                        Incorporated an advanced search filter that allows users
+                        to narrow listings
+                      </li>
+                      <li>
+                        Users can favourite their apartments to add them into a
+                        curated list for easy access
+                      </li>
+                      <li>Added Map and geolocation functionalities</li>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary close-property"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary close-property" >Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="calculator details-container color-container d-flex flex-column"
+              style="height: 100%"
+            >
+              <div class="article-container p-2">
+                <img
+                  src="./src/img/indexpage.png"
+                  alt="calculator"
+                  height="500"
+                />
+              </div>
+              <h5 class="experience-sub-title project-title p-2">
+                calculator: AI-Powered Mobile App<br />
+                (Ruby on Rails)
+              </h5>
+              <div class="btn-container mt-auto p-2">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/douglashjf/rails-calculator'"
+                >
+                  Github
+                </button>
+                <button class="btn-color-3 open-calculator">+</button>
+                <button
+                  class="btn btn-color-1 project-btn"
+                  onclick="location.href='https://www.calculator.me'"
+                >
+                  Live Demo
+                </button>
+              </div>
+              <div class="calculator-modal d-none" id="calculatorModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <p class="pt-2"><strong>Description</strong></p>
+                      <p>
+                        App that extracts and summarizes key information from
+                        the web into digestible points, enabling users to stay
+                        informed
+                      </p>
+                      <hr />
+                      <p><strong>Features</strong></p>
+                      <li>
+                        Implemented features like user authentication and user
+                        preferences selection
+                      </li>
+                      <li>
+                        Socialisation of App via tools like bookmarking,
+                        comments, sharing to twitter & Whatsapp
+                      </li>
+                      <li>
+                        Use of background jobs (Sidekiq) & Action Mailer to
+                        automate sending of email per defined interval
+                      </li>
+                      <li>
+                        External interfaces with AI-powered tools, and News API
+                        with real-time refresh functionality
+                      </li>
+                      <li>
+                        Leveraged Web Sockets to bypass Heroku app-loading 30
+                        seconds limit
+                      </li>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary close-calculator"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
+
+    <div class="">
+      <div class=""></div>
+    </div>
+
     <section id="contact" class="mt-5">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -380,6 +558,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
     <script src="src/js/index.js"></script>
   </body>
 </html>
