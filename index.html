@@ -203,6 +203,32 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
+      <div
+        class="modal fade"
+        id="infogenieVid"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-body">
+              <video autoplay controls muted style="height: 620px">
+                <source src="./src/img/infogenie.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="experience-details-container swiper-container mySwiper">
         <div class="about-containers swiper-wrapper">
           <div class="swiper-slide">
@@ -231,11 +257,15 @@
                 <button class="btn-color-3 open-infogenie">+</button>
                 <button
                   class="btn btn-color-1 project-btn"
-                  onclick="location.href='https://www.infogenie.me'"
+                  data-bs-toggle="modal"
+                  data-bs-target="#infogenieVid"
                 >
                   Live Demo
                 </button>
               </div>
+
+              <!-- Modal -->
+
               <div class="infogenie-modal d-none" id="infogenieModal">
                 <div class="modal-dialog">
                   <div class="modal-content">
