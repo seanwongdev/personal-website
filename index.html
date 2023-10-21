@@ -229,6 +229,32 @@
           </div>
         </div>
       </div>
+      <div
+        class="modal fade"
+        id="hmarketplaceVid"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-body">
+              <video autoplay controls muted style="height: 620px">
+                <source src="./src/img/hmarketplace.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="experience-details-container swiper-container mySwiper">
         <div class="about-containers swiper-wrapper">
           <div class="swiper-slide">
@@ -414,7 +440,8 @@
                 <button class="btn-color-3 open-property">+</button>
                 <button
                   class="btn btn-color-1 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  data-bs-toggle="modal"
+                  data-bs-target="#hmarketplaceVid"
                 >
                   Live Demo
                 </button>
