@@ -231,6 +231,32 @@
       </div>
       <div
         class="modal fade"
+        id="memoryVid"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <video autoplay controls muted style="height: 580px">
+                <source src="./src/img/memory.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
         id="hmarketplaceVid"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
@@ -385,7 +411,8 @@
                 <button class="btn-color-3 open-memory">+</button>
                 <button
                   class="btn btn-color-1 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  data-bs-toggle="modal"
+                  data-bs-target="#memoryVid"
                 >
                   Live Demo
                 </button>
