@@ -40,6 +40,10 @@ nav {
   height: 17vh;
 }
 
+li {
+  font-size: 14px;
+}
+
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -260,8 +264,8 @@ section {
 .btn-color-3 {
   background-color: white;
   border-radius: 50% !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 21.2px !important;
+  height: 15px !important;
   padding: 0px 0px !important;
   display: flex;
   align-items: center;
@@ -304,6 +308,8 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0px 20px;
 }
 
 .about-pic {
@@ -343,7 +349,19 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   gap: 1rem 0.4rem;
-  justify-content: space-left;
+  height: 220px;
+  justify-content: center;
+  background-color: white;
+}
+
+.skills-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  gap: 1rem 0.4rem;
+
+  justify-content: center;
+  background-color: white;
 }
 
 .skills {
@@ -374,7 +392,7 @@ section {
   color: white;
   background-color: rgb(87, 87, 87);
   border: 1px solid rgb(163, 163, 163);
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .infogenie-modal p {
@@ -395,7 +413,7 @@ section {
   color: white;
   background-color: rgb(87, 87, 87);
   border: 1px solid rgb(163, 163, 163);
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .memory-modal p {
@@ -416,7 +434,7 @@ section {
   color: white;
   background-color: rgb(87, 87, 87);
   border: 1px solid rgb(163, 163, 163);
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .property-modal p {
@@ -437,7 +455,7 @@ section {
   color: white;
   background-color: rgb(87, 87, 87);
   border: 1px solid rgb(163, 163, 163);
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .calculator-modal p {
@@ -463,6 +481,7 @@ section {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  border-radius: 8px;
 }
 
 .project-img {

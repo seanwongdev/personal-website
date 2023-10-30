@@ -95,7 +95,7 @@
           <div class="about-containers">
             <div class="details-container">
               <h5 style="color: rgb(85, 85, 85)" class="mb-4">My Skills</h5>
-              <div class="article-container">
+              <div class="skills-container">
                 <div class="skills">JavaScript</div>
                 <div class="skills">React</div>
                 <div class="skills">Tailwind</div>
@@ -235,309 +235,322 @@
       </div>
       <div class="experience-details-container swiper-container mySwiper">
         <div class="about-containers swiper-wrapper">
-          <div class="swiper-slide">
-            <div
-              class="infogenie details-container color-container d-flex flex-column"
-              style="height: 100%"
-            >
-              <div class="article-container p-2">
-                <img
-                  src="./src/img/indexpage.png"
-                  alt="infogenie"
-                  height="500"
-                />
-              </div>
-              <h5 class="experience-sub-title project-title p-2">
-                InfoGenie: AI-Powered Mobile App<br />
-                (Ruby on Rails)
-              </h5>
-              <div class="btn-container mt-auto p-2">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/douglashjf/rails-infogenie'"
-                >
-                  Github
-                </button>
-                <button class="btn-color-3 open-infogenie">+</button>
-                <button
-                  class="btn btn-color-1 project-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#infogenieVid"
-                >
-                  Live Demo
-                </button>
-              </div>
+          <!-- <div class="swiper-slide"> -->
+          <div
+            class="infogenie color-container d-flex flex-column"
+            style="height: 495px; width: 16%"
+          >
+            <div class="article-container p-2">
+              <img src="./src/img/indexpage.png" alt="infogenie" height="200" />
+              <img src="./src/img/showpage.png" alt="infogenie" height="200" />
+            </div>
+            <h5 class="experience-sub-title project-title p-2">
+              InfoGenie App
 
-              <!-- Modal -->
+              <p class="pt-2"></p>
+              <p style="font-size: 15px">
+                This is an AI-powered mobile app that extracts and summarizes
+                key information from the web into digestible points, enabling
+                users to stay informed. It's built with
+                <span class="text-decoration-underline fw-bolder"
+                  >Ruby on Rails</span
+                >
+                and interfaces with
+                <span class="text-decoration-underline fw-bolder">OpenAI</span>
+                &
+                <span class="text-decoration-underline fw-bolder"
+                  >News APIs</span
+                >.
+              </p>
+            </h5>
+            <div class="btn-container mt-auto p-2">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/douglashjf/rails-infogenie'"
+              >
+                Github
+              </button>
+              <button class="btn-color-3 open-infogenie"><span>+</span></button>
+              <button
+                class="btn btn-color-1 project-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#infogenieVid"
+              >
+                Demo
+              </button>
+            </div>
 
-              <div class="infogenie-modal d-none" id="infogenieModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <p class="pt-2"><strong>Description</strong></p>
-                      <p>
-                        App that extracts and summarizes key information from
-                        the web into digestible points, enabling users to stay
-                        informed
-                      </p>
-                      <hr />
-                      <p><strong>Features</strong></p>
-                      <li>
-                        Implemented features like user authentication and user
-                        preferences selection
-                      </li>
-                      <li>
-                        Socialisation of App via tools like bookmarking,
-                        comments, sharing to twitter & Whatsapp
-                      </li>
-                      <li>
-                        Use of background jobs (Sidekiq) & Action Mailer to
-                        automate sending of email per defined interval
-                      </li>
-                      <li>
-                        External interfaces with AI-powered tools, and News API
-                        with real-time refresh functionality
-                      </li>
-                      <li>
-                        Leveraged Web Sockets to bypass Heroku app-loading 30
-                        seconds limit
-                      </li>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary close-infogenie"
-                      >
-                        Close
-                      </button>
-                    </div>
+            <!-- Modal -->
+
+            <div class="infogenie-modal d-none" id="infogenieModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p class="mt-2"><strong>Features</strong></p>
+                    <li>
+                      Implemented features like user authentication and user
+                      preferences selection
+                    </li>
+                    <li>
+                      Socialisation of App via tools like bookmarking, comments,
+                      sharing to twitter & Whatsapp
+                    </li>
+                    <li>
+                      Use of background jobs (Sidekiq) & Action Mailer to
+                      automate sending of email per defined interval
+                    </li>
+                    <li>
+                      External interfaces with AI-powered tools, and News API
+                      with real-time refresh functionality
+                    </li>
+                    <li>
+                      Leveraged Web Sockets to bypass Heroku app-loading 30
+                      seconds limit
+                    </li>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary close-infogenie"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div
-              class="memory details-container color-container d-flex flex-column"
-              style="height: 100%"
-            >
-              <div class="article-container p-2">
-                <img src="./src/img/memory.png" alt="memory" height="500" />
-              </div>
-              <h5 class="experience-sub-title project-title p-2">
-                Multiple Projects: Memory Game etc. <br />(JavaScript)
-              </h5>
-              <div class="btn-container mt-auto p-2">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/seanwongdev/Memory-game'"
+          <!-- </div> -->
+          <!-- <div class="swiper-slide"> -->
+          <div
+            class="memory color-container d-flex flex-column"
+            style="height: 495px; width: 16%"
+          >
+            <div class="article-container p-2">
+              <img src="./src/img/memory1.png" alt="memory" height="200" />
+            </div>
+            <h5 class="experience-sub-title project-title p-2">
+              To-do-app, Memory Game etc.
+
+              <p class="pt-2"></p>
+              <p style="font-size: 15px">
+                This is a portfolio of multiple projects built with
+                <span class="text-decoration-underline fw-bolder"
+                  >Vanilla JavaScript</span
                 >
-                  Github
-                </button>
-                <button class="btn-color-3 open-memory">+</button>
-                <button
-                  class="btn btn-color-1 project-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#memoryVid"
+                with the purpose of honing concepts like
+                <span class="text-decoration-underline fw-bolder"
+                  >MVC framework</span
                 >
-                  Live Demo
-                </button>
-              </div>
-              <div class="memory-modal d-none" id="memoryModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <p class="pt-2"><strong>Description</strong></p>
-                      <p>
-                        Portfolio of multiple projects with the sole purpose of
-                        honing JavaScript concepts
-                      </p>
-                      <hr />
-                      <p><strong>Concepts</strong></p>
-                      <li>
-                        Reinforcing basic concepts like the use of spread
-                        operators, .sort and Math.random to shuffle cards
-                      </li>
-                      <li>
-                        Keeping to MVC model which utilises publisher-subscriber
-                        pattern between controller and views
-                      </li>
-                      <li>
-                        Use of advanced DOM, going into event propagation and
-                        delegation
-                      </li>
-                      <li>
-                        Practices the use of parent class and extensions to
-                        child classes, as well as error rendering & alert
-                        messages
-                      </li>
-                      <li>
-                        Saving data on localStorage between refreshes and having
-                        ability to clear localStorage
-                      </li>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary close-memory"
-                      >
-                        Close
-                      </button>
-                    </div>
+                and
+                <span class="text-decoration-underline fw-bolder"
+                  >advanced DOM management</span
+                >.
+              </p>
+            </h5>
+            <div class="btn-container mt-auto p-2">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/seanwongdev/Memory-game'"
+              >
+                Github
+              </button>
+              <button class="btn-color-3 open-memory">+</button>
+              <button
+                class="btn btn-color-1 project-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#memoryVid"
+              >
+                Demo
+              </button>
+            </div>
+            <div class="memory-modal d-none" id="memoryModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p class="mt-2"><strong>Concepts</strong></p>
+                    <li>
+                      Reinforcing basic concepts like the use of spread
+                      operators, .sort and Math.random to shuffle cards
+                    </li>
+                    <li>
+                      Keeping to MVC model which utilises publisher-subscriber
+                      pattern between controller and views
+                    </li>
+                    <li>
+                      Use of advanced DOM, going into event propagation and
+                      delegation
+                    </li>
+                    <li>
+                      Practices the use of parent class and extensions to child
+                      classes, as well as error rendering & alert messages
+                    </li>
+                    <li>
+                      Saving data on localStorage between refreshes and having
+                      ability to clear localStorage
+                    </li>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary close-memory"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div
-              class="property details-container color-container d-flex flex-column"
-              style="height: 100%"
-            >
-              <div class="article-container p-2">
-                <img
-                  src="./src/img/housemarket1.png"
-                  alt="memory"
-                  height="210"
-                />
-                <img
-                  src="./src/img/housemarket2.png"
-                  alt="memory"
-                  height="250"
-                />
-              </div>
-              <h5 class="experience-sub-title project-title p-2">
-                Property e-Bidding Website <br />(Ruby on Rails)
-              </h5>
-              <div class="btn-container mt-auto p-2">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/douglashjf/house-marketplace'"
+          <!-- </div> -->
+          <!-- <div class="swiper-slide"> -->
+          <div
+            class="property color-container d-flex flex-column"
+            style="height: 495px; width: 16%"
+          >
+            <div class="article-container p-2">
+              <img src="./src/img/housemarket2.png" alt="memory" height="180" />
+            </div>
+            <h5 class="experience-sub-title project-title p-2">
+              Property e-Bid Site
+              <p class="pt-2"></p>
+              <p style="font-size: 15px">
+                99.co clone project built with
+                <span class="text-decoration-underline fw-bolder"
+                  >Ruby on Rails</span
                 >
-                  Github
-                </button>
-                <button class="btn-color-3 open-property">+</button>
-                <button
-                  class="btn btn-color-1 project-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#hmarketplaceVid"
+                that infuses bidding mechanics and enables buyers to place bids
+                and sellers to accept offers. Utilises
+                <span class="text-decoration-underline fw-bolder"
+                  >Stimulus.js</span
                 >
-                  Live Demo
-                </button>
-              </div>
-              <div class="property-modal d-none" id="propertyModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <p class="pt-2"><strong>Description</strong></p>
-                      <p>
-                        99.co clone project that infuses bidding mechanics that
-                        enables buyers to place bids and sellers to accept
-                        offers
-                      </p>
-                      <hr />
-                      <p><strong>Features</strong></p>
-                      <li>
-                        Use of AJAX to ensure that offers can be accepted
-                        seamlessly
-                      </li>
-                      <li>
-                        PG search utilised to allow dynamic searching of
-                        apartment names and sellers
-                      </li>
-                      <li>
-                        Incorporated an advanced search filter that allows users
-                        to narrow listings
-                      </li>
-                      <li>
-                        Users can favourite their apartments to add them into a
-                        curated list for easy access
-                      </li>
-                      <li>Added Map and geolocation functionalities</li>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary close-property"
-                      >
-                        Close
-                      </button>
-                    </div>
+                to reduce need for eventAddListeners and DOM.
+              </p>
+            </h5>
+            <div class="btn-container mt-auto p-2">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/douglashjf/house-marketplace'"
+              >
+                Github
+              </button>
+              <button class="btn-color-3 open-property">+</button>
+              <button
+                class="btn btn-color-1 project-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#hmarketplaceVid"
+              >
+                Demo
+              </button>
+            </div>
+            <div class="property-modal d-none" id="propertyModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p class="mt-2"><strong>Features</strong></p>
+                    <li>
+                      Use of AJAX to ensure that offers can be accepted
+                      seamlessly
+                    </li>
+                    <li>
+                      PG search utilised to allow dynamic searching of apartment
+                      names and sellers
+                    </li>
+                    <li>
+                      Incorporated an advanced search filter that allows users
+                      to narrow listings
+                    </li>
+                    <li>
+                      Users can favourite their apartments to add them into a
+                      curated list for easy access
+                    </li>
+                    <li>Added Map and geolocation functionalities</li>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary close-property"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div
-              class="calculator details-container color-container d-flex flex-column"
-              style="height: 100%"
-            >
-              <div class="article-container p-2">
-                <img
-                  src="./src/img/calculator.png"
-                  alt="calculator"
-                  height="500"
-                />
-              </div>
-              <h5 class="experience-sub-title project-title p-2">
-                Simple Calculator App<br />
-                (React JS)
-              </h5>
-              <div class="btn-container mt-auto p-2">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/seanwongdev/react-calculator-app'"
+          <!-- </div>
+          <div class="swiper-slide"> -->
+          <div
+            class="calculator color-container d-flex flex-column"
+            style="height: 495px; width: 16%"
+          >
+            <div class="article-container p-2">
+              <img
+                src="./src/img/calculator.png"
+                alt="calculator"
+                height="200"
+              />
+            </div>
+            <h5 class="experience-sub-title project-title p-2">
+              Simple Calculator App
+              <p class="pt-2"></p>
+              <p style="font-size: 15px">
+                I built a calculator app with
+                <span class="text-decoration-underline fw-bolder"
+                  >React.js</span
                 >
-                  Github
-                </button>
-                <button class="btn-color-3 open-calculator">+</button>
-                <button
-                  class="btn btn-color-1 project-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#calculatorVid"
-                >
-                  Live Demo
-                </button>
-              </div>
-              <div class="calculator-modal d-none" id="calculatorModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <p class="pt-2"><strong>Description</strong></p>
-                      <p>Calculator App that can do simple arithmetic</p>
-                      <hr />
-                      <p><strong>Concepts Reinforced</strong></p>
-                      <li>
-                        React Basics: working with components, props and JSX
-                      </li>
-                      <li>
-                        Use of state, events, and forms to achieve the desired
-                        output
-                      </li>
-                      <li>
-                        Utilising Lifting up of states,
-                        child-to-parent-communication and children props for
-                        reusability
-                      </li>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary close-calculator"
-                      >
-                        Close
-                      </button>
-                    </div>
+                that can do simple arithmetic computations. Primarily focused on
+                React fundamentals.
+              </p>
+            </h5>
+            <div class="btn-container mt-auto p-2">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/seanwongdev/react-calculator-app'"
+              >
+                Github
+              </button>
+              <button class="btn-color-3 open-calculator">+</button>
+              <button
+                class="btn btn-color-1 project-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#calculatorVid"
+              >
+                Demo
+              </button>
+            </div>
+            <div class="calculator-modal d-none" id="calculatorModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p class="mt-2"><strong>Concepts Reinforced</strong></p>
+                    <li>
+                      React Basics: working with components, props and JSX
+                    </li>
+                    <li>
+                      Use of state, events, and forms to achieve the desired
+                      output
+                    </li>
+                    <li>
+                      Utilising Lifting up of states,
+                      child-to-parent-communication and children props for
+                      reusability
+                    </li>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary close-calculator"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- </div> -->
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
     </section>
 
