@@ -159,13 +159,14 @@ section {
 .section-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* PROFILE SECTION */
 
 #profile {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: start;
   gap: 5rem;
   height: 65vh;
@@ -297,7 +298,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  width: 75%;
+  width: 40%;
 }
 
 .about-containers,
@@ -316,11 +317,10 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1.5rem 0rem;
   flex: 1;
   background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: none;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
@@ -342,20 +342,15 @@ section {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 1rem 0.4rem;
+  justify-content: space-left;
 }
 
-article {
-  display: flex;
-  width: 12rem;
-  justify-content: space-center;
-  gap: 1rem;
-}
-
-article .icon {
-  cursor: default;
+.skills {
+  background-color: rgb(87, 87, 87);
+  color: white;
+  padding: 2px 7px;
+  font-weight: 500;
 }
 
 /* PROJECTS SECTION */

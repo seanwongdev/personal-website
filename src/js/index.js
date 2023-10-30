@@ -6,11 +6,7 @@ function toggleMenu() {
 }
 
 const typed = new Typed("#element", {
-  strings: [
-    "  is the bridge between us and the machines",
-    "  is like solving puzzles, but you can't see the picture",
-    "  is a journey, not a destination",
-  ],
+  strings: ["  is a journey, not a destination"],
   startDelay: 1500,
   backDelay: 3000,
   typeSpeed: 30,
@@ -80,23 +76,23 @@ openCalculator.addEventListener("click", function (e) {
 
 /*   Swiper JS      */
 
-const swiper = new Swiper(".mySwiper", {
-  // Optional parameters
-  slidesPerView: 2,
+// const swiper = new Swiper(".mySwiper", {
+//   // Optional parameters
+//   slidesPerView: 2,
 
-  spaceBetween: 80,
-  loop: true,
+//   spaceBetween: 80,
+//   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    type: "bullets",
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//     type: "bullets",
+//   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
