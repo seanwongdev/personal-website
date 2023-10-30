@@ -296,7 +296,7 @@ section {
 }
 
 .about-details-container {
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
   width: 40%;
 }
@@ -322,7 +322,7 @@ section {
   background: white;
   border: none;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align: left;
 }
 
 .section-container {
