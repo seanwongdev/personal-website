@@ -23,8 +23,7 @@
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile,
-  .section-container {
+  #profile {
     display: block;
   }
   .arrow {
@@ -52,6 +51,11 @@
   footer {
     height: 40vh;
   }
+
+  .section-container {
+    gap: 2rem;
+  }
+
   #profile {
     height: 83vh;
     margin-bottom: 0;
@@ -91,6 +95,16 @@
     height: 46vw;
     justify-content: center;
   }
+
+  .about-pic {
+    width: 230px;
+    height: 300px;
+  }
+
+  .intro {
+    font-size: 1.5rem;
+  }
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
