@@ -47,6 +47,16 @@
   .about-containers {
     margin-top: 0;
   }
+
+  #hmarketplaceVid video {
+    height: 430px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #hmarketplaceVid video {
+    height: 260px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -75,8 +85,7 @@
     margin-bottom: 2rem;
   }
   .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
+  .contact-info-upper-container {
     flex-wrap: wrap;
   }
   .contact-info-container {
@@ -120,6 +129,22 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  #hmarketplaceVid video {
+    height: 180px !important;
+  }
+
+  #calculatorVid video {
+    height: 498px !important;
+  }
+
+  #memoryVid video {
+    height: 425px !important;
+  }
+
+  #infogenieVid video {
+    height: 430px !important;
   }
 }
 
