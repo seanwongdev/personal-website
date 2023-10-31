@@ -271,6 +271,7 @@ section {
 }
 
 .btn-color-3 {
+  color: black;
   background-color: white;
   border-radius: 50% !important;
   width: 21.2px !important;
