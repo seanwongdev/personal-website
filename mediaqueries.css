@@ -1,3 +1,6 @@
+@media screen and (max-width: 1650px) {
+}
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -50,6 +53,10 @@
   #contact,
   footer {
     height: 40vh;
+  }
+
+  #profile {
+    height: 60vh !important;
   }
 
   .section-container {
@@ -113,5 +120,12 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-pic {
+    width: 180px;
+    height: 230px;
   }
 }
