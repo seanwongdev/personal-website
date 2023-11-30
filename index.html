@@ -100,15 +100,16 @@
               <h5 style="color: rgb(85, 85, 85)" class="mb-4">My Skills</h5>
               <div class="skills-container">
                 <div class="skills">JavaScript</div>
-                <div class="skills">React</div>
-                <div class="skills">Tailwind</div>
-                <div class="skills">Supabase</div>
+                <div class="skills">React.js</div>
+                <div class="skills">Tailwind CSS</div>
+                <div class="skills">Node.js</div>
                 <div class="skills">HTML</div>
                 <div class="skills">CSS</div>
                 <div class="skills">SASS</div>
                 <div class="skills">BootStrap</div>
                 <div class="skills">PostgreSQL</div>
-                <div class="skills">Ruby</div>
+                <div class="skills">MongoDB</div>
+
                 <div class="skills">Ruby on Rails</div>
                 <div class="skills">ActiveRecord</div>
                 <div class="skills">Git</div>
@@ -144,6 +145,32 @@
             <div class="modal-body">
               <video autoplay controls muted style="height: 580px">
                 <source src="./src/img/infogeniecut.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="jobshopVid"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-body">
+              <video autoplay controls muted style="height: 620px">
+                <source src="./src/img/jobshop.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="modal-footer">
@@ -324,77 +351,68 @@
           </div>
 
           <div
-            class="memory color-container d-flex flex-column"
+            class="jobshop color-container d-flex flex-column"
             style="height: 495px; width: 250px"
           >
             <div class="article-container p-2">
-              <img src="./src/img/memory1.png" alt="memory" height="200" />
+              <img src="./src/img/jobshop.png" alt="jobshop" height="200" />
             </div>
             <h5 class="experience-sub-title project-title p-2">
-              To-do-app, Memory Game etc.
+              Jobshop Tracking App
 
               <p class="pt-2"></p>
               <p style="font-size: 15px">
-                This is a portfolio of multiple projects built with
+                In line with my own efforts to find a job, I created an app 
+                to help track my applications and measure my efforts.
+                Built with <span class="text-decoration-underline fw-bolder"
+                  >MERN Stack</span
+                >, this makes use of      
                 <span class="text-decoration-underline fw-bolder"
-                  >Vanilla JavaScript</span
-                >
-                with the purpose of honing concepts like
-                <span class="text-decoration-underline fw-bolder"
-                  >MVC framework</span
-                >
-                and
-                <span class="text-decoration-underline fw-bolder"
-                  >advanced DOM management</span
-                >.
+                  >Client-Side Rendering </span
+                > with <span class="text-decoration-underline fw-bolder">React.js (front) & Node (back)</span>.
               </p>
             </h5>
             <div class="btn-container mt-auto p-2">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/seanwongdev/Memory-game'"
+                onclick="location.href='https://github.com/seanwongdev/MERN-jobshop'"
               >
                 Github
               </button>
-              <button class="btn-color-3 open-memory">+</button>
+              <button class="btn-color-3 open-jobshop">+</button>
               <button
                 class="btn btn-color-1 project-btn"
                 data-bs-toggle="modal"
-                data-bs-target="#memoryVid"
+                data-bs-target="#jobshopVid"
               >
                 Demo
               </button>
             </div>
-            <div class="memory-modal d-none" id="memoryModal">
+            <div class="jobshop-modal d-none" id="jobshopModal">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-body">
                     <p class="mt-2"><strong>Concepts</strong></p>
                     <li>
-                      Reinforcing basic concepts like the use of spread
-                      operators, .sort and Math.random to shuffle cards
+                      Learnt the ropes around Client-Side Rendering and how to serve the client from the backend
                     </li>
                     <li>
-                      Keeping to MVC model which utilises publisher-subscriber
-                      pattern between controller and views
+                      Understood the ways of route management with React and Node and the overhead that comes with it (i.e proxy config, more complexity)
                     </li>
                     <li>
-                      Use of advanced DOM, going into event propagation and
-                      delegation
+                      Utilised JSON Web Tokens and cookies for authentication to enable backend and frontend login functionality
                     </li>
                     <li>
-                      Practices the use of parent class and extensions to child
-                      classes, as well as error rendering & alert messages
+                      Experienced the importance of error handling and how errors can be managed differently in production and development environments 
                     </li>
                     <li>
-                      Saving data on localStorage between refreshes and having
-                      ability to clear localStorage
+                      Leveraged on React Router upgrades that allowed used of loaders, actions and errorElements functionalities
                     </li>
                   </div>
                   <div class="modal-footer">
                     <button
                       type="button"
-                      class="btn btn-secondary close-memory"
+                      class="btn btn-secondary close-jobshop"
                     >
                       Close
                     </button>
@@ -409,7 +427,7 @@
             style="height: 495px; width: 250px"
           >
             <div class="article-container p-2">
-              <img src="./src/img/housemarket2.png" alt="memory" height="180" />
+              <img src="./src/img/housemarket2.png" alt="house" height="180" />
             </div>
             <h5 class="experience-sub-title project-title p-2">
               Property e-Bid Site
@@ -550,70 +568,84 @@
           </div>
 
           <div
-            class="new color-container d-flex flex-column position-relative"
-            style="height: 495px; width: 250px"
-          >
-            
-              <div class="article-container p-2">
-                <img src="./src/img/blurred.png" alt="memory" height="150" />
-              </div>
-              <h5 class="experience-sub-title project-title p-2 show-blur">
-                JobShop App <br />
-                <em class="wip">Coming Soon</em>
-              </h5>
-                <p class="pt-2"></p>
-                <p style="font-size: 15px" class="mx-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>, sed
-                  do eiusmod tempor <br> incididunt ut
-                  
-                </p>
-              
-              <div class="btn-container mt-auto p-2">
-                <button class="btn btn-color-2 project-btn">Github</button>
-                <button class="btn-color-3 open-memory">+</button>
-                <button class="btn btn-color-1 project-btn">Demo</button>
-              </div>
-              <div class="memory-modal d-none" id="memoryModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <p class="mt-2"><strong>Concepts</strong></p>
-                      <li>
-                        Reinforcing basic concepts like the use of spread
-                        operators, .sort and Math.random to shuffle cards
-                      </li>
-                      <li>
-                        Keeping to MVC model which utilises publisher-subscriber
-                        pattern between controller and views
-                      </li>
-                      <li>
-                        Use of advanced DOM, going into event propagation and
-                        delegation
-                      </li>
-                      <li>
-                        Practices the use of parent class and extensions to
-                        child classes, as well as error rendering & alert
-                        messages
-                      </li>
-                      <li>
-                        Saving data on localStorage between refreshes and having
-                        ability to clear localStorage
-                      </li>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary close-memory"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
+          class="memory color-container d-flex flex-column"
+          style="height: 495px; width: 250px"
+        >
+          <div class="article-container p-2">
+            <img src="./src/img/memory1.png" alt="memory" height="200" />
+          </div>
+          <h5 class="experience-sub-title project-title p-2">
+            To-do-app, Memory Game etc.
+
+            <p class="pt-2"></p>
+            <p style="font-size: 15px">
+              This is a portfolio of multiple projects built with
+              <span class="text-decoration-underline fw-bolder"
+                >Vanilla JavaScript</span
+              >
+              with the purpose of honing concepts like
+              <span class="text-decoration-underline fw-bolder"
+                >MVC framework</span
+              >
+              and
+              <span class="text-decoration-underline fw-bolder"
+                >advanced DOM management</span
+              >.
+            </p>
+          </h5>
+          <div class="btn-container mt-auto p-2">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/seanwongdev/Memory-game'"
+            >
+              Github
+            </button>
+            <button class="btn-color-3 open-memory">+</button>
+            <button
+              class="btn btn-color-1 project-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#memoryVid"
+            >
+              Demo
+            </button>
+          </div>
+          <div class="memory-modal d-none" id="memoryModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p class="mt-2"><strong>Concepts</strong></p>
+                  <li>
+                    Reinforcing basic concepts like the use of spread
+                    operators, .sort and Math.random to shuffle cards
+                  </li>
+                  <li>
+                    Keeping to MVC model which utilises publisher-subscriber
+                    pattern between controller and views
+                  </li>
+                  <li>
+                    Use of advanced DOM, going into event propagation and
+                    delegation
+                  </li>
+                  <li>
+                    Practices the use of parent class and extensions to child
+                    classes, as well as error rendering & alert messages
+                  </li>
+                  <li>
+                    Saving data on localStorage between refreshes and having
+                    ability to clear localStorage
+                  </li>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary close-memory"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
-            </div
+            </div>
           </div>
-        </div>
       </div>
     </section>
 
