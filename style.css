@@ -406,6 +406,10 @@ section {
   filter: blur(4px); /* Apply the blur effect to the entire element */
 }
 
+.modal-btn:hover {
+  font-weight: bold !important;
+}
+
 .infogenie-modal {
   position: absolute !important;
   left: 0 !important;
