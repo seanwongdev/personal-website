@@ -325,7 +325,10 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px;
+  object-fit: cover;
+  object-position: 60%;
 }
 
 .arrow {
