@@ -44,6 +44,21 @@ openMemory.addEventListener("click", function (e) {
   modal.classList.remove("d-none");
 });
 
+const wakeshopBtn = document.querySelector(".close-wakeshop");
+
+wakeshopBtn.addEventListener("click", function (e) {
+  const modal = document.getElementById("wakeshopModal");
+  console.log(modal);
+  modal.classList.add("d-none");
+});
+
+const openwakeshop = document.querySelector(".open-wakeshop");
+openwakeshop.addEventListener("click", function (e) {
+  const modal = document.getElementById("wakeshopModal");
+  console.log(modal);
+  modal.classList.remove("d-none");
+});
+
 const jobshopBtn = document.querySelector(".close-jobshop");
 
 jobshopBtn.addEventListener("click", function (e) {

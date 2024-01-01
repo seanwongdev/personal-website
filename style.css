@@ -427,6 +427,27 @@ section {
   color: white;
 }
 
+.wakeshop {
+  position: relative !important;
+}
+
+.wakeshop-modal {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  padding: 0px 20px;
+  height: auto;
+  color: white;
+  background-color: rgb(87, 87, 87);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 8px;
+}
+
+.wakeshop-modal p {
+  color: white;
+}
+
 .jobshop {
   position: relative !important;
 }
