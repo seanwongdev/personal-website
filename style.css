@@ -8,8 +8,8 @@
 }
 
 .swiper {
-  width: 80%;
-  height: 100%;
+  width: 82%;
+  height: 550px;
 }
 
 .swiper-slide {
@@ -19,6 +19,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-pagination-bullets {
+  bottom: -10px;
 }
 
 * {
