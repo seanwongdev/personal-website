@@ -106,23 +106,11 @@ openCalculator.addEventListener("click", function (e) {
 
 /*   Swiper JS      */
 
-// const swiper = new Swiper(".mySwiper", {
-//   // Optional parameters
-//   slidesPerView: 2,
-
-//   spaceBetween: 80,
-//   loop: true,
-
-//   // If we need pagination
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//     type: "bullets",
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 5,
+  spaceBetween: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
