@@ -323,7 +323,6 @@ section {
 
 .about-containers {
   margin-bottom: 2rem;
-  margin-top: 2rem;
 }
 
 .about-details-container {
@@ -394,6 +393,24 @@ section {
 
   justify-content: center;
   background-color: white;
+}
+
+.pm-container {
+  margin-top: 1rem;
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  gap: 1rem 0.4rem;
+
+  justify-content: center;
+  background-color: white;
+}
+
+.pm {
+  background-color: rgb(181, 165, 165);
+  color: white;
+  padding: 2px 7px;
+  font-weight: 500;
 }
 
 .skills {
